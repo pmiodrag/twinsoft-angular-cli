@@ -99,11 +99,24 @@
 .white_bg {
     background-color: #fff !important;
 }
+.blue {
+    color: rgb(119, 178, 218) !important; //#90CAF9 !important; //#29B6F6 !important;
+}
 .blue_bg {
-    background-color: rgb(119, 178, 218) ; //#90CAF9 !important; //#29B6F6 !important;
+    background-color: rgb(119, 178, 218) !important; //#90CAF9 !important; //#29B6F6 !important;
 }
 .orange_bg {
      background-color: #F38B72;
+}
+.yellow {
+    color: #E6EE9C !important;
+}
+.yellow_bg {
+    background-color: #E6EE9C !important;
+}
+.yellow_active {
+    background-color: #E6EE9C !important;
+    color: rgb(119, 178, 218) !important;
 }
 .gradient_blue {
       background: rgba(212,228,239,1) !important;

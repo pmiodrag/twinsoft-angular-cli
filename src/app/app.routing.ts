@@ -4,8 +4,9 @@ import { HomeRoutes } from './home/index';
 import { TeamRoutes } from './team/index';
 
 const appRoutes: Routes = [
-    ...HomeRoutes,
-    ...TeamRoutes
+    ...TeamRoutes,
+    ...HomeRoutes
+    
 ];
 
 export const appRoutingProviders: any[] = [

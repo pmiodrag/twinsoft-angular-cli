@@ -16,20 +16,20 @@
                     <p>Contact me here...</p>
                       {{companyInfo.email}}
                 </div>
-                <md-grid-tile-footer>
+                <md-grid-tile-footer class="blue_bg"> 
                  <div class="col-md-2">
-                <button md-mini-fab class="black_bg" (click)="changeComapanyPage(page.About)">
-                    <i class="material-icons white">person_pin</i>                            
+                <button md-mini-fab class="black_bg"  [ngClass]="{'yellow_active': (companyPage | async)  == page.About}" (click)="changeComapanyPage(page.About)">
+                    <i class="material-icons">person_pin</i>                            
                 </button> 
                  </div>
                 <div class="col-md-2">
-                <button md-mini-fab class="black_bg" (click)="changeComapanyPage(page.Projects)">
-                    <i class="material-icons white">school</i>                            
+                <button md-mini-fab class="black_bg" [ngClass]="{'yellow_active': (companyPage | async)  == page.Projects}" (click)="changeComapanyPage(page.Projects)">
+                    <i class="material-icons">school</i>                            
                 </button> 
                  </div>
                  <div class="col-md-2">
-                <button md-mini-fab class="black_bg" (click)="changeComapanyPage(page.Contact)">
-                    <i class="material-icons white">contact_mail</i>                            
+                <button md-mini-fab class="black_bg" [ngClass]="{'yellow_active': (companyPage | async)  == page.Contact}" (click)="changeComapanyPage(page.Contact)">
+                    <i class="material-icons">contact_mail</i>                            
                 </button> 
                  </div>
             </md-grid-tile-footer>
