@@ -2,10 +2,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeRoutes } from './home/index';
 import { TeamRoutes } from './team/index';
+import { ServiceRoutes } from './service/index';
 
 const appRoutes: Routes = [
     ...TeamRoutes,
-    ...HomeRoutes
+    ...HomeRoutes,
+    ...ServiceRoutes
     
 ];
 

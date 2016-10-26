@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { appRoutingProviders, routing } from './app.routing';
 import { HomeModule } from './home';
 import { TeamModule } from './team/team.module';
+import { ServiceModule } from './service/service.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 @NgModule({
@@ -15,6 +16,7 @@ import { BrowserModule } from '@angular/platform-browser';
         HomeModule,
         BrowserModule,
         TeamModule,
+        ServiceModule,
         SharedModule.forRoot(),
         routing
     ],
