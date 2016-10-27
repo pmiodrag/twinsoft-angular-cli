@@ -2,22 +2,28 @@
     <md-grid-list  cols="6" rowHeight="200px">     
         <md-grid-tile id="custom-div" class="md-elevation-z8" *ngFor="let person of persons" [colspan]="3" [rowspan]="2" >
             <div class="page_title">{{ person.firstName }} {{ person.lastName }}</div>                           
-            <div  class="text-center" *ngIf="(personId == person.id && (teamPage | async)  == page.Personal ) 
-                  || (personId != person.id && (person.page == page.Personal || person.page == null ))" [@visibilityChanged]="(personId == person.id && (teamPage | async)  == page.Personal ) 
+            <div  class="text-center" [@visibilityChanged]="(personId == person.id && (teamPage | async)  == page.Personal ) 
                   || (personId != person.id && (person.page == page.Personal || person.page == null ))">
                   <a  class="profile-spot no-border" >
                     <img  src="{{person.photo}}" class="img" />
                 </a>
             </div>
-            <div  class="top_section"  *ngIf="(personId == person.id && (teamPage | async)  == page.Skills) 
-                  || (personId != person.id && person.page == page.Skills)" [@visibilityChanged]="(personId == person.id && (teamPage | async)  == page.Skills) 
+            <div  class="top_section"  [@visibilityChanged]="(personId == person.id && (teamPage | async)  == page.Skills) 
                   || (personId != person.id && person.page == page.Skills)"  >
-                  <p class="title">Show me your skills here...</p>
+                  <p class="title">Skills</p>
+                <div *ngFor="let skill of person.skills" class="badge"> 
+                    {{skill.name}}
+<!--                    <md-slider class="skills" value="{{skill.year}}" disabled></md-slider>-->
             </div>
-            <div  class="top_section"  *ngIf="(personId == person.id && (teamPage | async)  == page.Contact) 
-                  || (personId != person.id && person.page == page.Contact)" [@visibilityChanged]="(personId == person.id && (teamPage | async)  == page.Contact) 
+       <!--<md-slider value="88" disabled></md-slider>-->
+<!--       <md-progress-circle mode="determinate" value="60"></md-progress-circle>-->
+            </div>
+            <div  class="top_section"  [@visibilityChanged]="(personId == person.id && (teamPage | async)  == page.Contact) 
                   || (personId != person.id && person.page == page.Contact)"  >
                   <p class="title">Contact me here...</p>
+                <div class="badge">
+                    <i class="material-icons" >email</i> {{person.email}}
+                </div>
             </div>
             <md-grid-tile-footer class="blue_bg">
                 <div class="col-md-2">

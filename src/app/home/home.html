@@ -3,19 +3,21 @@
         <md-grid-tile  id="custom-div" [colspan]="1" [rowspan]="2" > 
             <div *ngFor="let companyInfo  of company">
                 <div class="page_title">{{ companyInfo.name }} </div>                           
-                <div  *ngIf="(companyPage | async)  == page.About" [@visibilityChanged]="(companyPage | async)  == page.About">
+                <div [@visibilityChanged]="(companyPage | async)  == page.About">
                     <a  class="profile-spot no-border" >
                         <img  src="{{companyInfo.photo}}" class="img" />
                     </a>
                     <p class="company_info">{{companyInfo.description}}</p>
                 </div>
-                <div class="top_section" *ngIf="(companyPage | async)  == page.Projects" [@visibilityChanged]="(companyPage | async)  == page.Projects"  >
+                <div class="top_section"  [@visibilityChanged]="(companyPage | async)  == page.Projects"  >
                     <p class="title">Show me your Projects here...</p>
                     {{companyInfo.projects}}
                 </div>
-                <div class="top_section" *ngIf="(companyPage | async)  == page.Contact" [@visibilityChanged]="(companyPage | async)  == page.Contact"  >
+                <div class="top_section" [@visibilityChanged]="(companyPage | async)  == page.Contact"  >
                     <p class="title">Contact me at..</p>
-                    {{companyInfo.email}}
+                   <div class="badge">
+                        <i class="material-icons" >email</i> {{companyInfo.email}}
+                   </div>
                 </div>
                 <md-grid-tile-footer class="blue_bg"> 
                     <div class="col-md-2">

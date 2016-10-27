@@ -54,3 +54,19 @@
   cursor: pointer;
   text-shadow: 0 1px 0px rgba(255, 255, 255, 0.1);
 }
+.badge {
+    display: inline-block;
+    z-index: 6;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 15px;
+    margin-top:5px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    line-height: 1;
+    cursor: pointer;
+    text-shadow: 0 1px 0px rgba(255, 255, 255, 0.1);
+}

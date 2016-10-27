@@ -1,4 +1,12 @@
 [
-    {"id": 1, "firstName":"Miodrag", "lastName":"Pavkovic", "photo": "assets/images/mio5.jpg", "email": "mpavkovic@gmail.com"},
-    {"id": 2, "firstName":"Miroslav", "lastName":"Pavkovic", "photo": "assets/images/miroslav.jpg", "email": "mpavkovic@gmail.com"}
+    {"id": 1, 
+     "firstName":"Miodrag", 
+     "lastName":"Pavkovic", 
+     "photo": "assets/images/mio5.jpg", 
+     "email": "mpavkovic@gmail.com",
+     "skills": [{"name" : "java", "year": "88"}, {"name" : "angular2", "year": "10"}]
+        
+        },
+    {"id": 2, "firstName":"Miroslav", "lastName":"Pavkovic", "photo": "assets/images/miroslav.jpg", "email": "mpavkovic@gmail.com",   
+        "skills": [{"name" : "Java", "year": "40"}, {"name" : "angular2", "year": "10"}]}
 ]
