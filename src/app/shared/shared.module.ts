@@ -10,7 +10,6 @@ import { FooterComponent } from './footer/index';
 /**
  * Do not specify providers for modules that might be imported by a lazy loaded module.
  */
-
 @NgModule({
     imports: [CommonModule, RouterModule, MaterialModule.forRoot()],
     declarations: [ NavbarComponent, FooterComponent],

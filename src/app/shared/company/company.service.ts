@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
-export enum CompanyPage { About, Projects, Contact}
+export enum CompanyPage { Intro, About, Projects, Contact, Info}
 
 export interface ICompany {
     id: number; 

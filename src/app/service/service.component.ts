@@ -8,7 +8,6 @@ import { InfoService, CompanyServiceInfo } from '../shared/index';
 import {BehaviorSubject} from "rxjs/Rx";
 import {asObservable} from "../shared/util/asObservable";
 
-
 @Component({
     selector: 'as-service',
     templateUrl: 'service.html',
@@ -19,7 +18,7 @@ import {asObservable} from "../shared/util/asObservable";
         state('true' , style({ opacity: 1, transform: 'scale(1.0)' })),
         state('false', style({ opacity: 0, transform: 'scale(0.0)'  })),
         transition('1 => 0', animate('300ms')),
-        transition('0 => 1', animate('900ms'))
+        transition('0 => 1', animate('600ms'))
         ]),
         trigger('visibilityChanged1', [
         state('true' , style({ opacity: 1, transform: 'scale(1.0)' })),
@@ -35,6 +34,7 @@ export class ServiceComponent implements OnInit {
     services: CompanyServiceInfo[] = [];
     serviceId: number = 1;
     service: any;
+    showServiceInfo: boolean = false;
     /**
      * Creates an instance of the HomeComponent with the injected
      * NameListService.
@@ -68,5 +68,10 @@ export class ServiceComponent implements OnInit {
     
     showService(serviceInfo: CompanyServiceInfo) {
         this.service = serviceInfo;
+        this.showServiceInfo = false;
+    }
+    
+    showServiceDetails(show: boolean) {
+        this.showServiceInfo = show;
     }
 }

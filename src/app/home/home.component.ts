@@ -18,14 +18,13 @@ import {asObservable} from "../shared/util/asObservable";
     animations: [ trigger('visibilityChanged', [
         state('true' , style({ opacity: 1, transform: 'scale(1.0)' })),
         state('false', style({ opacity: 0, transform: 'scale(0.0)'  })),
-        transition('1 => 0', animate('300ms')),
-        transition('0 => 1', animate('900ms'))
-        ])
-    ]
+        transition('1 => 0',  animate('200ms ease-in')),
+        transition('0 => 1', animate('500ms  ease-out'))
+        ])]
 })
 export class HomeComponent implements OnInit {
     
-    _companyPage: BehaviorSubject<any> = new BehaviorSubject(CompanyPage.About);
+    _companyPage: BehaviorSubject<any> = new BehaviorSubject(CompanyPage.Intro);
     errorMessage: string;
     company: Company[] = [];
     public page = CompanyPage;

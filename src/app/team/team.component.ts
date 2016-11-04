@@ -4,6 +4,7 @@ style,
 transition,
 keyframes,
 animate  } from '@angular/core';
+import { Location } from '@angular/common';
 import { PersonService, Person, TeamPage } from '../shared/index';
 import {BehaviorSubject} from "rxjs/Rx";
 import {asObservable} from "../shared/util/asObservable";
@@ -37,7 +38,7 @@ export class TeamComponent implements OnInit {
      *
      * @param {NameListService} nameListService - The injected NameListService.
      */
-    constructor(private personService: PersonService) { }
+    constructor(private personService: PersonService, private location: Location) { }
 
 
     ngOnInit() {
@@ -68,6 +69,5 @@ export class TeamComponent implements OnInit {
                 }
             );
     }
-
-
+    
 }
