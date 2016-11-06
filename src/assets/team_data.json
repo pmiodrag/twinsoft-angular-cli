@@ -45,17 +45,17 @@
         "target1": "_self",
         "linkedin" : "https://rs.linkedin.com/in/miroslav-pavkovic-a0248283",
         "skills": [{"name" : "Java", "year": "11"}, {"name" : "Angular2", "year": "1"},{"name" : "AngularJS", "year": "3"}, {"name" : "Microservices", "year": "2"},
-                    {"name" : "Python", "year": "2"},{"name" : "GWT", "year": "3"}, {"name" : "Groovy & Grails", "year": "1"}, {"name" : "Magento", "year": "3"}, 
+                    {"name" : "AWS", "year": "2"},{"name" : "Python", "year": "2"}, {"name" : "Groovy & Grails", "year": "1"}, {"name" : "Magento", "year": "3"}, 
                     {"name" : "Typescript", "year": "1"}, {"name" : "Javascript", "year": "10"}],    
-        "databases" :[{"name": "MySQl"},{"name": "MS SQL"}, {"name": "MongoDB"}, {"name": "rsync"}],
+        "databases" :[{"name": "MySQL"},{"name": "Oracle"},{"name": "MS SQL"}, {"name": "MongoDB"}, {"name": "rsync"}],
         "build" : [{"name": "Gulp"},{"name": "Grunt"}, {"name": "Webpack"}, {"name": "Maven"}],
         "paradigms" :[{"name": "OOP"},{"name": "Functional programming"}, {"name": "Reactive programming"}],
         "design": [{"name": "CSS2"},{"name": "CSS3"}, {"name": "Bootstrap"}, {"name": "Sass"}, {"name": "Material design"}, {"name": "Angular material"}],
-        "frameworks": [{"name" : "Spring", "year": "6"},{"name" : "Django", "year": "2"}, {"name" : "Django-REST", "year": "2"},
-                        {"name" : "Hibernate", "year": "2"},{"name" : "Node.js", "year": "2"}, {"name" : "Express", "year": "2"} ],
+        "frameworks": [{"name" : "Spring", "year": "6"}, {"name" : "Spring Cloud", "year": "2"}, {"name" : "Spring Boot", "year": "2"},{"name" : "Django", "year": "2"}, {"name" : "Django-REST", "year": "2"},
+                        {"name" : "Hibernate", "year": "5"},{"name" : "Node.js", "year": "2"}, {"name" : "Express", "year": "2"} ],
         "protocols" :[{"name": "REST"},{"name": "RPC"}, {"name": "Rsync"}],
         "ide" : [{"name": "IntelliJ"},{"name": "NetBeans"}, {"name": "Eclipse"}, {"name": "WebStorm"}],
-        "servers" :[{"name": "Apache"},{"name": "Tomcat"}],
+        "servers" :[{"name": "Apache"},{"name": "Tomcat"},{"name": "Jboss"}],
         "os" : [{"name": "Windows"},{"name": "Linux"}]}
 ]
 
